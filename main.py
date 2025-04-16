@@ -4,6 +4,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, origins=["https://shebins298.github.io", "http://127.0.0.1:5500"])  # Limit CORS to your GitHub Pages site
 
+@app.route("/", methods=["GET"])
+def home():
+    return "✅ Hi There!", 200
+
 
 @app.route("/analyze", methods=["POST"])
 def analyze():
