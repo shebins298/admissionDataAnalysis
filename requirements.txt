@@ -1,4 +1,8 @@
-Flask
+flask
 flask-cors
 gunicorn
-google-generativeai
+google-cloud-ai
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+requests
