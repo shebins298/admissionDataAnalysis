@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins=["https://shebins298.github.io"])  # Limit CORS to your GitHub Pages site
+CORS(app, origins=["https://shebins298.github.io", "http://127.0.0.1:5500"])  # Limit CORS to your GitHub Pages site
 
 
 @app.route("/analyze", methods=["POST"])
