@@ -4,7 +4,8 @@ from collections import Counter
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app, origins=["https://shebins298.github.io"])
+CORS(app, origins=["https://shebins298.github.io", "https://panangad-vhss-application-insights.netlify.app"])
+
 
 @app.route("/", methods=["GET"])
 def home():
